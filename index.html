@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyani | Carnatic Vocalist</title>
+    <link rel="icon" type="image/png" href="assets/kalyani_favicon.png">
+    <link rel="apple-touch-icon" href="assets/kalyani_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0.85);
+            animation: modalFadeIn 0.3s;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-content {
+            display: block;
+            margin: 6vh auto 0 auto;
+            max-width: 90vw;
+            max-height: 70vh;
+            border-radius: 18px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+            border: 6px solid #fff;
+            background: #fff;
+            animation: zoomIn 0.3s;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 32px;
+            right: 48px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10001;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            border: 2px solid #fff;
+        }
+
+        .modal-close:hover {
+            background: #ff4081;
+            color: #fff;
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        @media (max-width: 600px) {
+            .modal-content {
+                max-width: 98vw;
+                max-height: 50vh;
+            }
+
+            .modal-close {
+                top: 10px;
+                right: 16px;
+                width: 36px;
+                height: 36px;
+                font-size: 24px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="bg-animation-shape"></div>
+        <div class="bg-animation-shape"></div>
+        <div class="bg-animation-shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kalyani Mudumba</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text reveal-text">
+                <span class="eyebrow">Carnatic music • teaching • performance</span>
+                <h1 class="gradient-text">Kalyani Mudumba</h1>
+                <h2>Carnatic Vocalist</h2>
+                <p>Bringing the classical traditions of South India to life through melody, devotion, and rhythm.</p>
+            
+                <div class="hero-actions">
+                    <a href="#contact" class="btn">
+                        <span>Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+            
+                    <a href="#gallery" class="btn btn-secondary">
+                        <span>View Gallery</span>
+                        <i class="fas fa-images"></i>
+                    </a>
+                </div>
+            
+                <div class="hero-highlights">
+                    <span><strong>4</strong> World Records</span>
+                    <span><strong>200+</strong> Performances</span>
+                    <span><strong>15+</strong> Years</span>
+                </div>
+            </div>
+            <div class="hero-image reveal-image">
+                <img src="assets/DSC_0151.JPG" alt="Kalyani - Carnatic Vocalist">
+                <div class="hero-image-decoration"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">My Story</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A journey through tradition, innovation, and service in Carnatic music</p>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="about-main-grid">
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="https://kalyanimudumba.com/assets/Photo Shoot/DSC_0191.JPG"
+                            alt="Kalyani Mudumba - Carnatic Vocalist">
+                    </div>
+                    <div class="profile-decoration-1"></div>
+                    <div class="profile-decoration-2"></div>
+                </div>
+
+                <!-- Bio Content -->
+                <div class="bio-content">
+                    <p class="bio-text">
+                        Guru Srimathi Kalyani Mudumba was born and raised in Nalgonda, Telangana, in a family steeped in
+                        rich musical tradition. Her grandfather and his brothers, renowned as the Sapta Swaras and the
+                        Burugadda Brothers, were celebrated figures in the Carnatic music community.
+                    </p>
+                    <p class="bio-text">
+                        Inspired by this lineage, Kalyani began her musical journey at the tender age of three under the
+                        disciplined guidance of her grandfather and first guru, Sri Mudumba Lakshmana Charyulu Garu. She
+                        later continued her training with her father, Sri Mudumba Singara Charyulu Garu, and
+                        subsequently with Guru Smt. Mythraeyee Mukundan Garu in the United States.
+                    </p>
+                    <p class="bio-text">
+                        Now based in Bloomington, Illinois, Guru Kalyani continues her multifaceted contributions as a
+                        recording artist, certified creative writer, and author of two published books. Through her work
+                        as a teacher, performer, and cultural ambassador, she remains committed to honoring the
+                        traditions of Carnatic music while inspiring a new generation of learners around the world.
+                    </p>
+                </div>
+            </div>
+
+            <section id="achievements" class="achievements-section">
+                <div class="container">
+                    <!-- <div class="section-header">
+                        <span class="section-badge">Highlights</span>
+                        <h2 class="section-title">Achievements</h2>
+                    </div> -->
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="achievement-number">15+</div>
+                            <div class="achievement-label">Years Experience</div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-microphone-alt"></i>
+                            </div>
+                            <div class="achievement-number">200+</div>
+                            <div class="achievement-label">Performances</div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <div class="achievement-number">2+</div>
+                            <div class="achievement-label">continents</div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="achievement-number">4</div>
+                            <div class="achievement-label">World Records</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Major Achievements Section -->
+            <div class="events-section">
+                <h3 class="events-title">Major Achievements & Events</h3>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h4 class="event-title">ASSA & India Event</h4>
+                            <span class="event-badge">World Record</span>
+                        </div>
+                        <p class="event-content">
+                            On October 8, 2022, Guru Srimathi Kalyani Mudumba, founder of the Kalyani School of Music,
+                            made history by organizing and leading the Ashtotthara Shatha Sankeerthana Archana, a grand
+                            Carnatic music fundraiser concert at the Hindu Temple of Bloomington-Normal, Illinois. The
+                            event featured 27 participants from two continents, India and the USA, who rendered 108
+                            Carnatic classical compositions by over 30 composers in six languages over the course of 10
+                            hours, both in-person and virtually via YouTube livestream. Participants were grouped
+                            according to the seven swaras, and after each performance, a lotus flower was strung,
+                            culminating in a garland of 108 lotus flowers offered to the Lord. This spiritually
+                            enriching and culturally significant event raised over $6,000 to support the temple's
+                            post-pandemic operations. The concert earned two prestigious world records, recognized by
+                            both the Asia Book of Records and the India Book of Records, for the "Maximum Participants
+                            Singing Carnatic Classical Songs in Different Languages", making Kalyani the first and only
+                            Carnatic musician to achieve this dual recognition. Her efforts were further acknowledged
+                            internationally, with Vietnam, Indonesia, Nepal, and 18 other countries officially approving
+                            the record under the International Protocol for New Records (IPNR). On July 10, 2023,
+                            Kalyani was felicitated in Hyderabad, Telangana at Sugunakar Rao Bhavan by Mr. Rammohan
+                            Reddy, the adjudicator for the Asia and India Book of Records, who honored her with medals
+                            and certificates in front of a large audience and media presence. Esteemed dignitaries and
+                            local state ministers graced the occasion, celebrating her cultural contribution. Further
+                            adding to this recognition, on September 24, 2023, the Mayors of Bloomington and Normal
+                            jointly awarded certificates to all the students who participated in the event,
+                            acknowledging their role in this historic accomplishment. Through this milestone, Kalyani
+                            demonstrated that setting a world record doesn't require grandiose or extreme feats, but
+                            rather a dedication to promoting culture and preserving heritage, especially through divine
+                            South Indian Carnatic classical music, which embodies peace, compassion, and spiritual
+                            unity, enriching communities around the world.
+                        </p>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h4 class="event-title">Sanjeevani</h4>
+                            <span class="event-badge">Charity Concert</span>
+                        </div>
+                        <p class="event-content">
+                            Sanjeevani, an evening filled with the divine sounds of Carnatic classical music, was more
+                            than a concert—it was a heartfelt movement for global healing, compassion, and connection.
+                            Organized by the Kalyani School of Music, the event showcased how Carnatic music,
+                            traditionally rooted in temples and homes, could transcend boundaries to become a universal
+                            language of healing. Every raga and composition was thoughtfully selected for its
+                            therapeutic power, intended to calm minds, uplift spirits, and reach out to those
+                            suffering—especially children battling life-threatening illnesses. The program was delivered
+                            with maturity, emotion, and a deep reverence for the sacredness of the art form and the
+                            cause, reflecting the mission of St. Jude Children's Research Hospital, the chosen
+                            beneficiary. At the Kalyani School of Music, students regularly work with neurodiverse
+                            children, using music as a tool for therapy and transformation, aligning perfectly with St.
+                            Jude's mission of providing treatment, hope, and healing. Though founder Kalyani Mudumba
+                            could not attend due to illness, the school was represented by students Kimshita and Anisha
+                            Amaravadi, who conveyed the vision with grace and conviction. The concert featured five
+                            performance groups, each symbolically named after Hanuman's legendary roles in the Ramayana:
+                            Rama Bantu (Rama's loyal servant), Rama Bhaktha (Hanuman's devotion), Rama Dandu (Rama's
+                            army), Rama Sethu (the bridge to Lanka), and Rama Dhootha (Rama's messenger). These group
+                            names honored Hanuman's selflessness and service, mirroring the spirit behind Sanjeevani, a
+                            name inspired by the story of Hanuman lifting an entire mountain when he couldn't find the
+                            healing herb, a metaphor for going to any lengths to save lives and bring healing. The
+                            concert's impact resonated not just within the venue but across continents, reminding us
+                            that music, when guided by purpose, can become a powerful force for compassion, healing, and
+                            hope. All proceeds were donated to St. Jude, making every note sung a step closer to
+                            comforting and supporting families facing unimaginable challenges.
+                        </p>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h4 class="event-title">Sundara Setu</h4>
+                            <span class="event-badge">World Record</span>
+                        </div>
+                        <p class="event-content">
+                            On December 16, 2023, esteemed Carnatic vocalist and educator Smt. Kalyani Mudumba presented
+                            a distinguished concert titled "Sundara Setu" at the Quad City Hindu Temple in Rock Island,
+                            Illinois, USA. This 90-minute Carnatic classical recital served as a fundraiser in support
+                            of the "Statue of Union," a 90-foot Panchaloha idol of Lord Hanuman currently under
+                            construction at the Sri Ashtalakshmi Temple in Houston, Texas. Conceived by His Holiness Sri
+                            Chinna Jeeyar Swamiji, the statue will stand as the tallest of its kind in North America and
+                            the fourth tallest Hanuman statue in the United States. The concert was designed with
+                            symbolic intent, its 90-minute duration mirroring the 90-foot height of the statue, thereby
+                            reinforcing the spiritual and cultural significance of the initiative. In recognition of its
+                            impact, the performance earned world records from both the Asia Book of Records and the
+                            India Book of Records under the title: "Carnatic concert to raise funds for the tallest
+                            statue of Lord Hanuman outside India." Further honoring this achievement, His Holiness Sri
+                            Chinna Jeeyar Swamiji personally presented the world record certificates to Smt. Kalyani
+                            Mudumba at the inauguration of the Statue of Union at the Sri Ashtalakshmi Temple in
+                            Houston, underscoring the spiritual importance and global resonance of her contribution.
+                            Smt. Kalyani Mudumba's efforts through "Sundara Setu" exemplified the power of classical
+                            music as a medium for devotional expression, cultural advocacy, and community service. The
+                            event not only celebrated the rich traditions of Carnatic music but also advanced a noble
+                            cause, uniting devotees and music enthusiasts in a shared vision of spiritual elevation and
+                            collective purpose.
+                        </p>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h4 class="event-title">City Proclamation</h4>
+                            <span class="event-badge">Official Recognition</span>
+                        </div>
+                        <p class="event-content">
+                            On March 10th, 2025, the City of Bloomington, Illinois, officially honored Kalyani Mudumba
+                            with a proclamation acknowledging her remarkable achievements in Carnatic music and her
+                            significant contributions to cultural enrichment and community service. The proclamation,
+                            issued by Mayor Mboka Mwilambwe, celebrates Kalyani's four world records in Carnatic music,
+                            recognized by the Asia Book of Records and the India Book of Records. These records were
+                            achieved through events such as the Ashtotthara Shatha Sankeerthana Archana and Sundara
+                            Setu, both of which served as fundraisers for meaningful causes, including the Hindu Temple
+                            of Bloomington-Normal and the Statue of Unity. As the founder of the Kalyani School of
+                            Music, Kalyani has led numerous philanthropic initiatives, including the Sanjeevani concert
+                            for St. Jude Children's Research Hospital, support for Netra Vidyalaya, and various animal
+                            welfare efforts. The proclamation commends her for utilizing Carnatic music as a means of
+                            promoting unity, mindfulness, and intercultural exchange, and for enhancing cultural
+                            inclusivity in Bloomington through education, compassion, and community-building.
+                        </p>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h4 class="event-title">Sangeeta Yagna</h4>
+                            <span class="event-badge">COVID-19 Initiative</span>
+                        </div>
+                        <p class="event-content">
+                            In 2020, during the height of the COVID-19 pandemic, Smt. Kalyani Mudumba organized a unique
+                            virtual fundraiser titled "Sangeeta Yagna" to support Netra Vidyalaya, a school for the
+                            visually challenged in India. Demonstrating her unwavering commitment to service through
+                            music, Kalyani took the initiative to train a group of volunteer students, many of whom were
+                            not part of her regular music school, in Carnatic kritis over two months via online
+                            sessions. The culminating event celebrated their efforts and dedication and successfully
+                            raised $1,600 to aid the school's initiatives. "Sangeeta Yagna" stood as a testament to how
+                            music, even amid a global crisis, could serve as a tool for empowerment, inclusion, and
+                            compassion.
+                        </p>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-header">
+                            <h4 class="event-title">SVSS Recognition</h4>
+                            <span class="event-badge">Award</span>
+                        </div>
+                        <p class="event-content">
+                            In 2023, Smt. Kalyani Mudumba was honored with the "Vishishta Mahila Puraskaram" by the Sri
+                            Vaishnava Seva Sangam in recognition of her remarkable achievements in the field of Carnatic
+                            music. This prestigious award was presented to acknowledge her world record-setting
+                            performances, her outstanding efforts to globalize Carnatic music, and the significant
+                            social impact she has created through her numerous fundraising events. Through her
+                            innovative and purpose-driven approach, Kalyani has used the classical tradition not only as
+                            a form of cultural preservation but also as a powerful tool for service, bringing Carnatic
+                            music to global audiences while supporting meaningful causes across communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philanthropy Section -->
+            <div class="philanthropy-section">
+                <div class="philanthropy-header">
+                    <div class="philanthropy-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="philanthropy-title">Philanthropy in Carnatic Music</h3>
+                </div>
+                <p class="philanthropy-content">
+                    While Carnatic music concerts are traditionally performed during festivals and religious
+                    celebrations, Smt. Kalyani Mudumba believes that this sacred art form holds the potential to extend
+                    far beyond ceremonial occasions, as a powerful vehicle for service and compassion. Guided by this
+                    belief, she has redefined the purpose of performance by organizing at least one fundraising concert
+                    each year, ensuring that Carnatic music continually contributes to a meaningful cause. Her vision
+                    enables this classical tradition to permeate more widely across the world, connecting with diverse
+                    audiences and communities through acts of goodwill. Over the years, her initiatives have supported
+                    visually challenged schools such as Netra Vidyalaya, animal welfare programs, St. Jude Children's
+                    Research Hospital, and other impactful missions, reaffirming her commitment to using music as a tool
+                    for healing, outreach, and global connection.
+                </p>
+                <div class="cause-tags">
+                    <span class="cause-tag">St. Jude Children's Hospital</span>
+                    <span class="cause-tag">Netra Vidyalaya</span>
+                    <span class="cause-tag">Animal Welfare</span>
+                    <span class="cause-tag">Temple Support</span>
+                </div>
+            </div>
+
+            <!-- Recognition Section -->
+            <div class="recognition-section">
+                <div class="recognition-badge">
+                    <i class="fas fa-award"></i>
+                    <span class="recognition-text">Recognized by Sri Vaishnava Seva Sangam with "Vishishta Mahila
+                        Puraskaram" in 2023</span>
+                </div>
+                <p class="recognition-description">
+                    Honored for remarkable achievements in Carnatic music, world record-setting performances, and
+                    significant social impact through numerous fundraising events.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Performances</span>
+                <h2 class="section-title">Gallery</h2>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="4-H judging">4-H judging</button>
+                <button class="filter-btn" data-filter="Assa Event">ASSA Event</button>
+                <button class="filter-btn" data-filter="Books">Books</button>
+                <button class="filter-btn" data-filter="Certificate Events">Certificate Events</button>
+                <button class="filter-btn" data-filter="Guru Vandana">Guru Vandana</button>
+                <!-- <button class="filter-btn" data-filter="Houston">Houston</button> -->
+                <!-- <button class="filter-btn" data-filter="Spiritual Articles">Spiritual Articles</button> -->
+                <button class="filter-btn" data-filter="India Event (ASSA)">World Record Felicitations</button>
+                <button class="filter-btn" data-filter="Margam">Margam</button>
+                <button class="filter-btn" data-filter="Pantagraph">Pantagraph</button>
+                <button class="filter-btn" data-filter="Photo Shoot">Concert</button>
+                <button class="filter-btn" data-filter="Proclamation">Proclamation</button>
+                <button class="filter-btn" data-filter="Random">Miscellaneous</button>
+                <button class="filter-btn" data-filter="Sanjeevani">Sanjeevani</button>
+                <button class="filter-btn" data-filter="Sundara Setu">Sundara Setu</button>
+                <button class="filter-btn" data-filter="SVSS">SVSS</button>
+                <button class="filter-btn" data-filter="Times now Article">Times now Article</button>
+                <button class="filter-btn" data-filter="Naadha Saurabham">Naadha Saurabham</button>
+
+
+            </div>
+
+            <div class="gallery-container reveal-stagger">
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/c0f2d992c698fe7d078c0185e38b7eef.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/e2ce4919667fb22301337f5e2a37463d.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/e9a1172ab703dd79f9125dbf955561fd.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/f6fc29945dda6eeec4449c2e7391ee1c.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/927fa29b6f43ffc863a6e707e5376309.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/983f986b0b98e2a65a6fa6856dc33f0b.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/5ad24398e8e3724c2ca8a55de7c5f385.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/82041b04687756cfee4b8c6a81a3b166.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/5f613509f7f56e3617d49276bcd6ea42.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/add1dfec2cb277ad8958bb93415d2898.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/458e61c82d5baf644fc0278e5602687b.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/7fc2cf73273330c3f954b5c6f218bc32.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/2a2292c9f4f46f15b967a0d9d57a99c0.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/ad632ee04d11e7fff0f25052bb1bdf5f.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/e8a77bae9d7441ad24810c1da2f9511b.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/6ea8f456fb72e3452569f86c71bf26cd.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/935db86a447b13d019935a1ad926f1c7.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/d4e87ba58c1f8320e9ef494b8810e878.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/e81bf59c986e882d757dfa4a7c41227a.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/11357345ad6d35e8ff1c9cf36bd8a0b5.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/a9e0c0b949dfe6d67a44ee517b10e60a.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/62789519b3fb2c73f07909dadd745530.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/26f0e3fcf5933d9b598ae64e22d97fb9.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/4baeb66c127c777d78713ae27a3ef33d.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/01bf1debaeb56e7a9b241c022858642f.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/c69853b0246fa1d6c3f328dbaacd698c.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/497d01aed2bb890564a16f2894e84fb4.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/4a5a07408fd5dbeec456459f4f3cffe5.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/62571a1c1f4ab678e6e183c37592ab04.png"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/65032f129d5904c66a1c5dbbb100e871.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/a90390991125af90ca8f1e75c98e23ab.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/6ff56e2a27a4b5d55f0bb4ab763db894.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/e2f7fec71aeec764509089cda312a6c5.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/27fb230b5fc3a2c310a4268019009d4c.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/a28ef262f9dda78bc5982795aa56cede.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/ea58ad4ddaab8c9a88cbfef98c95e181.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/dedb18a519811b304a2c7e015470ed4f.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/9de1bea5fd5b964db2e85d6583384400.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/66cb46864537c37054e984b400b3dc52.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/6bd0e56175f2ae74a0e84f21ed593483.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/cb36fd583980e4af5c54485daa0674f9.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/a87b53d9c4354df958568d4851383aad.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/0c1d2b838e148e28c5b3c1c38c048015.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/efe9c4e80606c9b0547e5c66be776ca4.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/8ff6f9cc584cda1afc85d797b3b276e7.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/1b17ba99e4236f3ff46cd9eb47d95567.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/947d02ceb97141aa85115f4d4ce106de.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Naadha Saurabham">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/10/f99d8ad1293229b26a294422c51c0b3c.jpg"
+                            alt="Naadha Saurabham">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Times now Article">
+                    <div class="gallery-image">
+                        <img src="https://imgvb.com/images/2026/06/07/e5d6afa4f2a8287561854a0f524023d6.jpg"
+                            alt="Times now Article">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/IMG_6089.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="SVSS">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/SVSS/IMG_6092.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="SVSS">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/SVSS/IMG_6093.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="SVSS">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/SVSS/IMG_6094.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="SVSS">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/SVSS/IMG_6095.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/P1030859.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/sanjeevani-1.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/ABR&IBR_WorldRecord_Photo.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/DSC_2708.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/DSC_2710.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/DSC_2711.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/DSC_2715.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/IMG_3760.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/IMG_4397.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sundara Setu">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sundara Setu/sundara setu flyer.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/P1030857.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/IMG_6123.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/IMG_6122.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/IMG_6121.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/DSC_0197.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/IMG_6120.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Sanjeevani">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Sanjeevani/DSC_0229.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Random">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Random/IMG_6087.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Random">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Random/IMG_6088.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Random">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Random/IMG_6104.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Random">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Random/IMG_6125.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Random">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Random/IMG-2856.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Margam">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Margam/IMG_0646.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Proclamation">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Proclamation/IMG_6109.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Proclamation">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Proclamation/Kalyani_With_Proclamation_at_City_councilBoard.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Proclamation">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Proclamation/Proclamation-1.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Photo Shoot">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Photo Shoot/DSC_0136.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Photo Shoot">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Photo Shoot/DSC_0151.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Photo Shoot">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Photo Shoot/DSC_0191.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Photo Shoot">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Photo Shoot/DSC_0197.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Photo Shoot">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Photo Shoot/DSC_0213.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Pantagraph">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Pantagraph/Pantagraph_article_april15th_Clip.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Margam">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Margam/IMG_0647.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Margam">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Margam/IMG_6107.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Margam">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Margam/IMG_6108.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/IMG_6091.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/IMG_6090.JPG"
+                            alt="Studio Recording Session">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Invitation.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/JULY10_MEDALS.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/JULY10_IBR.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/JULY10_Group_photo_participants_NEW.jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/JULY10_Group_Photo_Dignitaries_NEW.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/JULY10_ABR.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/JULY10_ABR&IBR.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/Invitation.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/IMG_6126.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="India Event (ASSA)">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/India Event (ASSA)/IMG_6124.JPG"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (72 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (73 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (74 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (92 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (93 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (95 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (122 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (123 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (1).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (2).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (3).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (4).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (5).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (6).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (7).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (8).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (9).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Guru Vandana">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Guru Vandana/TEACHER APPRECIATION - HSS (10).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (124 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (134 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (229 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Certificate Events">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Certificate Events/Picture (230 of 250).jpg"
+                            alt="Performance at Music Academy">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Books">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/Book_Presentation_FormerCM_ChandrababuNaidu.png"
+                            alt="Teaching Workshop">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Books">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/IMG_1278.jpg" alt="Teaching Workshop">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Books">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/IMG_1281.jpg" alt="Teaching Workshop">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Books">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/IMG_1282.jpg" alt="Teaching Workshop">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Book">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/IMG_6101.jpg" alt="Teaching Workshop">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Books">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/IMG_6102.JPG" alt="Teaching Workshop">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Books">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/Book/IMG_6103.JPG" alt="Teaching Workshop">
+                    </div>
+                </div>
+                <!-- <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=600&query=carnatic music festival outdoor stage with audience" alt="Margazhi Music Festival">
+                    </div>
+                </div> -->
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judge_Badge.jpg" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_1.PNG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_5.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_7.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_8.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_9.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_11.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_12.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_13.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_14.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_15.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="4-H judging">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/4-H-judging/Judging_16.JPG" alt="Temple Concert">
+                    </div>
+                </div>
+                <!-- Assa -->
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/IMG_6097.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/IMG_6098.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/IMG_6099.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_1.jpg"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_3.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_4.jpg"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_5.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_6.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_8.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_9.JPG"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Assa Event">
+                    <div class="gallery-image">
+                        <img src="https://kalyanimudumba.com/assets/ASSA Event/OCT8_2022_ASSA_10.jpg"
+                            alt="Annual Thyagaraja Festival">
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-pagination">
+                <button class="load-more-btn">
+                    <span>Load More</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music School Registration Section -->
+    <!-- <section id="registration" class="registration section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Join Us</span>
+                <h2 class="section-title">Music School Registration</h2>
+                <p class="section-description">Interested in learning Carnatic music? Register below to join the Kalyani School of Music. All ages and experience levels welcome!</p>
+            </div>
+            <div class="registration-form-container">
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <input type="text" id="reg-name" name="name" required>
+                        <label for="reg-name">Your Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="reg-email" name="email" required>
+                        <label for="reg-email">Your Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="reg-phone" name="phone">
+                        <label for="reg-phone">Phone (optional)</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <select id="reg-age" name="age" required>
+                            <option value="" disabled selected>Select Age Group</option>
+                            <option value="child">Child (under 18)</option>
+                            <option value="adult">Adult (18+)</option>
+                        </select>
+                        <label for="reg-age">Age Group</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <select id="reg-experience" name="experience" required>
+                            <option value="" disabled selected>Experience Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <label for="reg-experience">Experience Level</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="reg-message" name="message"></textarea>
+                        <label for="reg-message">Message (optional)</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn">
+                        <span>Register</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <h3>Let's Connect</h3>
+                    <p>For bookings, collaborations, or any inquiries, please feel free to reach out.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kalyanimusicschool7@gmail.com</span>
+                    </div>
+                    <!-- <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div> -->
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bloomington, Illinois, USA</span>
+                    </div>
+                    <!-- <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Spotify">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="contact-form reveal-right">
+                    <form action="https://formspree.io/f/xvgrnyvg" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Kalyani</h2>
+                    <p>Carnatic Vocalist</p>
+                </div>
+                <p class="copyright">&copy; 2025 Kalyani. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImg" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.gallery-image img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function () {
+                document.getElementById('imageModal').style.display = 'block';
+                document.getElementById('modalImg').src = this.src;
+                document.getElementById('modalImg').alt = this.alt;
+            });
+        });
+        document.getElementById('modalClose').onclick = function () {
+            document.getElementById('imageModal').style.display = 'none';
+            document.getElementById('modalImg').src = '';
+        };
+        document.getElementById('imageModal').onclick = function (e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.getElementById('modalImg').src = '';
+            }
+        };
+    </script>
+</body>
+
+</html>
