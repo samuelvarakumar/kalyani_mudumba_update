@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", function () {
       this.classList.toggle("active")
       navLinks.classList.toggle("active")
+      document.body.classList.toggle("menu-open", navLinks.classList.contains("active"))
     })
   }
 
@@ -54,7 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
     item.addEventListener("click", () => {
       hamburger.classList.remove("active")
       navLinks.classList.remove("active")
+      document.body.classList.remove("menu-open")
     })
+  })
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      hamburger.classList.remove("active")
+      navLinks.classList.remove("active")
+      document.body.classList.remove("menu-open")
+    }
   })
 
   // Active nav link on scroll
