@@ -1115,7 +1115,7 @@ footer {
   }
   
   img.fix-rotation {
-    transform: rotate(90deg) scale(1.35);
+    transform: rotate(90deg) scale(1.35) !important;
   }
 }
 
