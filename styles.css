@@ -1113,6 +1113,10 @@ footer {
   .hero-text h1 {
     font-size: 2.5rem;
   }
+  
+  img.fix-rotation {
+    transform: rotate(90deg) scale(1.35);
+  }
 }
 
 @media screen and (max-width: 576px) {
