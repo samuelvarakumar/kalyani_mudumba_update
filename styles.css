@@ -96,7 +96,8 @@ img {
   font-size: 1rem;
   font-weight: 500;
   color: var(--primary-color);
-  margin-bottom: 1rem; /* Space between subtitle and title */
+  margin-bottom: 1rem;
+  /* Space between subtitle and title */
   position: relative;
   padding: 0 50px;
 }
@@ -112,11 +113,13 @@ img {
 }
 
 .section-subtitle::before {
-  left: -40px; /* Position the line to the left of the text */
+  left: -40px;
+  /* Position the line to the left of the text */
 }
 
 .section-subtitle::after {
-  right: -40px; /* Position the line to the right of the text */
+  right: -40px;
+  /* Position the line to the right of the text */
 }
 
 .section-title {
@@ -269,9 +272,11 @@ img {
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
+
   50% {
     transform: translate(100px, 100px) rotate(180deg);
   }
+
   100% {
     transform: translate(0, 0) rotate(360deg);
   }
@@ -428,15 +433,19 @@ header .container {
   0% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
+
   25% {
     border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
   }
+
   50% {
     border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
   }
+
   75% {
     border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
   }
+
   100% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
@@ -460,6 +469,7 @@ header .container {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -467,9 +477,11 @@ header .container {
   100% {
     transform: translateY(0) translateX(-50%);
   }
+
   40% {
     transform: translateY(-10px) translateX(-50%);
   }
+
   60% {
     transform: translateY(-5px) translateX(-50%);
   }
@@ -563,8 +575,8 @@ header .container {
 }
 
 .press-card {
-  background: rgba(255,255,255,0.78);
-  border: 1px solid rgba(124,21,21,0.10);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(124, 21, 21, 0.10);
   border-radius: 28px;
   box-shadow: 0 15px 40px rgba(61, 21, 8, 0.08);
   padding: 35px 40px;
@@ -610,9 +622,11 @@ header .container {
   .press-card {
     padding: 24px 20px;
   }
+
   .press-content h3 {
     font-size: 1.45rem;
   }
+
   .press-btn {
     width: 100%;
     justify-content: center;
@@ -686,6 +700,7 @@ header .container {
   height: auto;
   display: block;
   object-fit: cover;
+  image-orientation: from-image;
   transition: transform 0.5s ease;
 }
 
@@ -859,10 +874,10 @@ header .container {
   transition: var(--transition);
 }
 
-.form-group input:focus ~ label,
-.form-group textarea:focus ~ label,
-.form-group input:valid ~ label,
-.form-group textarea:valid ~ label {
+.form-group input:focus~label,
+.form-group textarea:focus~label,
+.form-group input:valid~label,
+.form-group textarea:valid~label {
   top: -10px;
   font-size: 0.8rem;
   color: var(--primary-color);
@@ -878,8 +893,8 @@ header .container {
   transition: var(--transition);
 }
 
-.form-group input:focus ~ .focus-border,
-.form-group textarea:focus ~ .focus-border {
+.form-group input:focus~.focus-border,
+.form-group textarea:focus~.focus-border {
   width: 100%;
 }
 
@@ -1003,6 +1018,7 @@ footer {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -1106,7 +1122,8 @@ footer {
 
   .section-subtitle::before,
   .section-subtitle::after {
-    width: 20px; /* Shorter lines on small screens */
+    width: 20px;
+    /* Shorter lines on small screens */
   }
 
   .section-subtitle::before {
@@ -1146,6 +1163,7 @@ footer {
     display: none;
   }
 }
+
 /* today code updtae */
 * {
   margin: 0;
@@ -1464,63 +1482,63 @@ body {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .about-main-grid {
-      grid-template-columns: 1fr;
-      gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .achievements-grid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .events-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
   .section-title {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .achievements-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .achievement-card {
-      padding: 20px 15px;
+    padding: 20px 15px;
   }
 
   .event-card {
-      padding: 25px;
+    padding: 25px;
   }
 
   .philanthropy-section {
-      padding: 30px 25px;
+    padding: 30px 25px;
   }
 
   .philanthropy-header {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .philanthropy-icon {
-      margin-right: 0;
-      margin-bottom: 15px;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .achievements-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .section-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .events-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -1532,8 +1550,8 @@ body {
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(216,169,59,.18), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(124,21,21,.12), transparent 35%),
+    radial-gradient(circle at top left, rgba(216, 169, 59, .18), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(124, 21, 21, .12), transparent 35%),
     #fff8ed;
 }
 
@@ -1582,8 +1600,8 @@ header {
   position: absolute;
   inset: 100px 4vw 50px;
   border-radius: 44px;
-  background: linear-gradient(135deg, rgba(255,255,255,.82), rgba(255,244,225,.75));
-  border: 1px solid rgba(124,21,21,.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .82), rgba(255, 244, 225, .75));
+  border: 1px solid rgba(124, 21, 21, .1);
   box-shadow: 0 30px 80px rgba(63, 21, 7, .14);
   z-index: -1;
 }
@@ -1601,9 +1619,9 @@ header {
   display: inline-flex;
   margin-bottom: 18px;
   padding: 9px 14px;
-  border: 1px solid rgba(124,21,21,.16);
+  border: 1px solid rgba(124, 21, 21, .16);
   border-radius: 999px;
-  background: rgba(255,255,255,.65);
+  background: rgba(255, 255, 255, .65);
   color: var(--primary-color);
   font-weight: 700;
   font-size: .8rem;
@@ -1636,9 +1654,9 @@ header {
 }
 
 .btn-secondary {
-  background: rgba(255,255,255,.75);
+  background: rgba(255, 255, 255, .75);
   color: var(--primary-color);
-  border: 1px solid rgba(124,21,21,.18);
+  border: 1px solid rgba(124, 21, 21, .18);
   box-shadow: none;
 }
 
@@ -1658,7 +1676,7 @@ header {
   gap: 7px;
   padding: 10px 14px;
   border-radius: 16px;
-  background: rgba(255,255,255,.72);
+  background: rgba(255, 255, 255, .72);
   box-shadow: 0 10px 25px rgba(61, 21, 8, .08);
   color: #6b554b;
 }
@@ -1672,7 +1690,7 @@ header {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 34px;
-  border: 10px solid rgba(255,255,255,.75);
+  border: 10px solid rgba(255, 255, 255, .75);
   box-shadow: 0 30px 80px rgba(63, 21, 7, .24);
 }
 
@@ -1686,8 +1704,8 @@ header {
 .event-card,
 .contact-info,
 .contact-form {
-  background: rgba(255,255,255,.78);
-  border: 1px solid rgba(124,21,21,.10);
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(124, 21, 21, .10);
   border-radius: 28px;
   box-shadow: 0 15px 40px rgba(61, 21, 8, .08);
 }
@@ -1710,8 +1728,8 @@ header {
 
 .filter-btn {
   flex: 0 0 auto;
-  border: 1px solid rgba(124,21,21,.14);
-  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(124, 21, 21, .14);
+  background: rgba(255, 255, 255, .78);
   color: #604943;
   border-radius: 999px;
 }
@@ -1738,9 +1756,9 @@ header {
 
 .form-group input,
 .form-group textarea {
-  border: 1px solid rgba(124,21,21,.16);
+  border: 1px solid rgba(124, 21, 21, .16);
   border-radius: 18px;
-  background: rgba(255,250,242,.82);
+  background: rgba(255, 250, 242, .82);
 }
 
 footer {
@@ -1830,10 +1848,10 @@ footer {
   color: #8a6f64;
 }
 
-.contact-form .form-group input:focus ~ label,
-.contact-form .form-group textarea:focus ~ label,
-.contact-form .form-group input:valid ~ label,
-.contact-form .form-group textarea:valid ~ label {
+.contact-form .form-group input:focus~label,
+.contact-form .form-group textarea:focus~label,
+.contact-form .form-group input:valid~label,
+.contact-form .form-group textarea:valid~label {
   top: 8px;
   font-size: 0.78rem;
   color: #8a6f64;
@@ -1845,6 +1863,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   .contact-info,
   .contact-form {
     padding: 22px 18px;
